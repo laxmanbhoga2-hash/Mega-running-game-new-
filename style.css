@@ -1,0 +1,62 @@
+*{margin:0;padding:0;box-sizing:border-box;touch-action:none;}
+
+body{
+    overflow:hidden;
+        font-family:Arial;
+            transition:background 3s linear;
+            }
+
+            body.day{background:linear-gradient(#87CEEB,#2ecc71);}
+            body.night{background:linear-gradient(#0f2027,#203a43);}
+
+            canvas{display:block;}
+
+            .hud{
+                position:absolute;
+                    top:10px;
+                        width:100%;
+                            display:flex;
+                                justify-content:space-around;
+                                    color:#00ff88;
+                                        font-weight:bold;
+                                            z-index:10;
+                                            }
+
+                                            .controls{
+                                                position:absolute;
+                                                    bottom:20px;
+                                                        width:100%;
+                                                            display:flex;
+                                                                justify-content:center;
+                                                                    gap:15px;
+                                                                        z-index:10;
+                                                                        }
+
+                                                                        .controls button{
+                                                                            width:60px;height:60px;
+                                                                                border-radius:50%;
+                                                                                    border:none;
+                                                                                        background:rgba(0,255,136,.6);
+                                                                                            font-size:22px;
+                                                                                            }
+
+                                                                                            .overlay{
+                                                                                                position:absolute;
+                                                                                                    inset:0;
+                                                                                                        background:rgba(0,0,0,.9);
+                                                                                                            color:white;
+                                                                                                                display:flex;
+                                                                                                                    flex-direction:column;
+                                                                                                                        justify-content:center;
+                                                                                                                            align-items:center;
+                                                                                                                                gap:15px;
+                                                                                                                                    z-index:20;
+                                                                                                                                    }
+
+                                                                                                                                    .hidden{display:none;}
+
+                                                                                                                                    button{
+                                                                                                                                        padding:10px 20px;
+                                                                                                                                            font-size:16px;
+                                                                                                                                            }
+                                                                                                                                            
